@@ -98,6 +98,7 @@ ng serve
 - **Models**: Defines entities such as User, Account, and Transaction.
 - **Services**: Contains business logic for handling user and account-related operations.
 - **Repositories**: Interacts with the MySQL database using Spring Data JPA.
+- **Config**:
 
 #### **Frontend (Angular)**
 
@@ -136,6 +137,7 @@ ng serve
 - **Spring Security Configuration**: Controls access to specific endpoints.
   - Example: /api/payment/accounts/balance/\*\* is restricted to authenticated users.
 - **Cross-Origin Requests**: Configured for development with @CrossOrigin(origins = "<http://localhost:4200>").
+- **JWT Authentication**: Replace basic Spring Security with JWT-based authentication for better session management.
 
 ### **Future Improvements**
 
