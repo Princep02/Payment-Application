@@ -98,7 +98,7 @@ ng serve
 - **Models**: Defines entities such as User, Account, and Transaction.
 - **Services**: Contains business logic for handling user and account-related operations.
 - **Repositories**: Interacts with the MySQL database using Spring Data JPA.
-- **Config**:
+- **Config**: major configuration classes added to the backend for handling core backend setups and ensuring security
 
 #### **Frontend (Angular)**
 
