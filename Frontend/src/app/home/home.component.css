@@ -1,0 +1,131 @@
+/* General container styling */
+/* Full height for body and html */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa; /* Light background for the entire page */
+}
+
+/* General container styling */
+
+.home-container {
+  max-width: 600px;
+  margin: auto;
+  background-color: #ffffff; /* White background for the container */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for a lifted effect */
+  padding: 2rem;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa; /* Light background color */
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #007bff; /* Primary color */
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  font-size: 1rem;
+  color: #495057; /* Dark gray for readability */
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  margin-top: 0.5rem;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+input[type="text"]:focus {
+  border-color: #007bff; /* Blue outline on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Glow effect */
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+  display: block;
+  width: 100%; /* Full width for buttons */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+button:disabled {
+  background-color: #ced4da; /* Disabled state */
+  cursor: not-allowed;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+ul li strong {
+  color: #495057;
+}
+
+div p {
+  text-align: center;
+  color: #495057;
+  font-size: 1rem;
+}
+
+div button {
+  background-color: #28a745; /* Green button for logout */
+  margin-top: 1rem;
+}
+
+div button:last-child {
+  background-color: #17a2b8; /* Yellow button for money transfer */
+}
+
+div button:hover {
+  opacity: 0.9; /* Slight opacity change for buttons */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 576px) {
+  .home-container {
+    padding: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    padding: 0.7rem 1rem;
+    font-size: 0.9rem;
+  }
+}

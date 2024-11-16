@@ -1,0 +1,28 @@
+<div class="transfer-container">
+    <h2>Transfer Money</h2>
+    <form (ngSubmit)="transferMoney()">
+      <div class="form-group">
+        <label for="fromAccount">From Account ID:</label>
+        <input type="text" id="fromAccount" [(ngModel)]="fromAccount" name="fromAccount" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="toAccount">To Account ID:</label>
+        <input type="text" id="toAccount" [(ngModel)]="toAccount" name="toAccount" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" [(ngModel)]="amount" name="amount" required>
+      </div>
+  
+      <button type="submit">Transfer</button>
+    </form>
+  
+    <div *ngIf="transferSuccess" class="alert alert-success">
+      Transfer successful!
+    </div>
+    <div *ngIf="transferError" class="alert alert-danger">
+      Transfer failed: {{ transferError }}
+    </div>
+  </div>

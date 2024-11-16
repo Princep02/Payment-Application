@@ -1,0 +1,28 @@
+<div class="home-container">
+  <h2>Your Accounts</h2>
+  <div class="form-group">
+    <label for="userPhoneNumber">Enter Your Phone Number:</label>
+    <input type="text" id="userPhoneNumber" [(ngModel)]="userPhoneNumber" name="userPhoneNumber" required>
+    <button (click)="fetchUserAccounts()">Fetch Accounts</button>
+  </div>
+
+  <div *ngIf="accounts.length > 0">
+    <ul>
+      <li *ngFor="let account of accounts">
+        <strong>Account ID:</strong> {{ account.account_id }} <br>
+        <strong>Account Number:</strong> {{ account.account_number }} <br>
+        <strong>Balance:</strong> {{ account.balance }} <br>
+      </li>
+    </ul>
+  </div>
+
+  <div *ngIf="accounts.length === 0">
+    <p>No accounts found for this phone number.</p>
+  </div>
+  <div>
+  <button (click)="transfer()">Transfer Money</button>
+  </div>
+  <div>
+    <button (click)="logout()">Logout</button>
+  </div>
+</div>

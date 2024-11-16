@@ -1,0 +1,101 @@
+/* General container styling */
+.transfer-container {
+  max-width: 600px;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa; /* Light background color */
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #007bff; /* Primary blue color */
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  font-size: 1rem;
+  color: #495057; /* Dark gray for readability */
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  margin-top: 0.5rem;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: #007bff; /* Blue outline on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Glow effect */
+}
+
+button {
+  background-color: #17a2b8; /* Light blue button for transfer */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+  display: block;
+  width: 100%; /* Full width for buttons */
+}
+
+button:hover {
+  background-color: #138496; /* Darker shade of blue on hover */
+}
+
+button:disabled {
+  background-color: #ced4da; /* Disabled state */
+  cursor: not-allowed;
+}
+
+.alert {
+  padding: 1rem;
+  margin-top: 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.alert-success {
+  background-color: #28a745;
+  color: white;
+}
+
+.alert-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 576px) {
+  .transfer-container {
+    padding: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    padding: 0.7rem 1rem;
+    font-size: 0.9rem;
+  }
+}

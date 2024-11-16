@@ -1,0 +1,111 @@
+<!-- <div class="container mt-2">
+    <div class ="card">
+        <h2>User Signup</h2>
+   
+<form>
+    <div class="form-group">
+        <label>Name</label>
+        <input type="text" [(ngModel)]="name" [ngModelOptions]="{standalone: true}" class="form-control" id="name" placeholder="Enter name">
+      </div>
+      <div class="form-group">
+        <label>Phone number</label>
+        <input type="phonenumber" [(ngModel)]="phonenumber" [ngModelOptions]="{standalone: true}" class="form-control" id="phonenumber" placeholder="Enter phonenumber">
+      </div>
+    <div class="form-group">
+      <label>Email address</label>
+      <input type="email" [(ngModel)]="email_id" [ngModelOptions]="{standalone: true}" class="form-control"class="form-control" id="email" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label>Password</label>
+      <input type="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" class="form-control" class="form-control" id="password" placeholder="Password">
+    </div>
+     <div class="form-group form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div> -->
+    <!-- <button type="submit" class="btn btn-primary"(click)="save()">Sign up</button>
+  </form>
+</div>
+</div> --> 
+
+<!-- src/app/signup/signup.component.html -->
+
+
+
+<div class="container mt-5">
+    <div class="card shadow-lg p-4 mb-5 bg-white rounded">
+      <h2 class="text-center mb-4 text-primary">User Signup</h2>
+      
+      <!-- Correcting the form tag and ngSubmit handler --> 
+       <form (ngSubmit)="save()">
+        
+        <!-- Name Field -->
+        <div class="form-group mb-3">
+          <label for="name" class="font-weight-bold">Name</label>
+          <input 
+            type="text" 
+            [(ngModel)]="name" 
+            name="name"
+            [ngModelOptions]="{standalone: true}" 
+            class="form-control" 
+            id="name" 
+            placeholder="Enter your name" 
+            required
+          />
+        </div>
+  
+        <!-- Phone Number Field -->
+        <div class="form-group mb-3">
+          <label for="phonenumber" class="font-weight-bold">Phone Number</label>
+          <input 
+            type="text" 
+            [(ngModel)]="phonenumber" 
+            name="phonenumber" 
+            [ngModelOptions]="{standalone: true}" 
+            class="form-control" 
+            id="phonenumber" 
+            placeholder="Enter your phone number" 
+            required
+          />
+        </div>
+  
+        <!-- Email Field -->
+        <div class="form-group mb-3">
+          <label for="email" class="font-weight-bold">Email Address</label>
+          <input 
+            type="email" 
+            [(ngModel)]="email_id" 
+            name="email_id"
+            [ngModelOptions]="{standalone: true}" 
+            class="form-control" 
+            id="email" 
+            placeholder="Enter your email" 
+            required
+          />
+        </div>
+  
+        <!-- Password Field -->
+        <div class="form-group mb-3">
+          <label for="password" class="font-weight-bold">Password</label>
+          <input 
+            type="password" 
+            [(ngModel)]="password" 
+            name="password"
+            [ngModelOptions]="{standalone: true}" 
+            class="form-control" 
+            id="password" 
+            placeholder="Enter your password" 
+            required
+          />
+        </div>
+  
+        <!-- Submit Button -->
+        <div class="form-group mb-3 text-center">
+          <button type="submit" class="btn btn-primary btn-block" [disabled]="!name || !phonenumber || !email_id || !password">
+            Sign Up
+          </button>
+        </div>
+      </form> <!-- Closing form tag properly -->
+    </div>
+  </div> 
+    
