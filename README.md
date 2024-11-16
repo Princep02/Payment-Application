@@ -34,9 +34,10 @@ The application follows a client-server architecture:
 - **Frontend (Angular)**: Makes HTTP requests to interact with the backend and presents data to users.
 - **Backend (Spring Boot)**: Exposes RESTful API endpoints to handle business logic.
 - **Database (MySQL)**: Stores all data related to users, accounts, and transactions.
-![napkin-selection (3)](https://github.com/user-attachments/assets/e6857fc9-252c-4d2d-8afa-e169861006c4)
-![napkin-selection (4)](https://github.com/user-attachments/assets/c0de11cb-bdd9-4f6a-a5db-2561ce669f5e)
-![napkin-selection (5)](https://github.com/user-attachments/assets/13d5e156-076a-4acf-8883-8c13e6b5ecff)
+
+![napkin-selection (3)](https://github.com/user-attachments/assets/1b8cf9b6-0cc6-419a-8068-6d241c04f1b5)
+![napkin-selection (4)](https://github.com/user-attachments/assets/f04b82f6-45f1-43cb-a9d0-18ae85363db2)
+![napkin-selection (5)](https://github.com/user-attachments/assets/3de0afed-0275-4dd0-a5f9-84a16049704a)
 
 ### **Installation**
 
